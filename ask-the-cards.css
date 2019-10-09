@@ -1,0 +1,114 @@
+/************************ general styles *********************/
+html {
+  overflow: scroll;
+}
+
+.page-width {
+  max-width: none;
+}
+
+.hand-cursor {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.opacity-to-1 {
+  opacity: 1 !important;
+}
+
+.to-display {
+  display: block !important;
+}
+
+/*************************************************************/
+/*************************** images **************************/
+#imgs-div {
+  position: relative;
+}
+
+.imgs {
+  width: 120%;
+}
+
+#back-img {
+  position: static;
+}
+
+#transition-img, #deck-div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#transition-img {
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -o-transition: opacity 2s;
+}
+
+.picked-card {
+  opacity: 0;
+  transition: opacity 3s;
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+}
+
+/*************************************************************/
+/************************** description **********************/
+#desc-div {
+  font-family: Rubik, helvetica-neue, helvetica, arial, sans-serif;
+  color: #222;
+  display: none;
+  margin: 25px;
+  text-align:center;
+}
+#desc-div h2 {
+  font-size: 22px;
+  text-transform: uppercase !important;
+  margin-top: 25px;
+  text-align:center;
+}
+#desc-div span {
+  font-size: 16px;
+ text-align:center;
+}
+
+.intro, .message {
+  display: block;
+  margin-bottom: 10px;
+  margin-top:20px;
+}
+
+/*************************************************************/
+/************************* action links **********************/
+#shuffle-deck {
+  display: none;
+  background-color: #28CDC0;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  color: white;
+  cursor: pointer;
+  font-family: Rubik, helvetica-neue, helvetica, arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 25px;
+  font-weight: 400;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+#shuffle-deck:hover {
+  opacity: .8 !important;
+}
