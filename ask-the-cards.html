@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ask The Cards</title>
+
+    <link href="ask-the-cards.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="imgs-div" class="hand-cursor"><img src="https://cdn.shopify.com/s/files/1/0107/8407/9938/files/back.jpg" id="back-img" class="imgs" alt="Think of your question and click on the deck to draw a card." /> <img src="https://cdn.shopify.com/s/files/1/0107/8407/9938/files/transition.jpg" id="transition-img" class="imgs" alt="" />
+    <div id="deck-div" class="picked-card"></div>
+    </div>
+    <div id="desc-div"></div>
+    <div id="action-links"><button id="shuffle-deck" class="">draw again</button></div>
+    <div id="desc-repo" hidden="">
+    <div id="columba" class="card-description">
+    <h2>0 - Columba (The Dove)</h2>
+    <span class="intro"> Columba represents the dove Noah sent from his Ark to see if there was any dry land left after the Great Flood. The dove returned with an olive branch in its beak, signalling that the flood was receding. In a Greek myth, a dove was sent by the Argonauts to fly through the Moving Rocks at the Black Sea. The Rocks were said to crush the first living thing that came between them. The dove flew through with such speed that the Rocks crashed against each other, leaving the bird unharmed. The Argonauts had thereby ensured their safe passage ahead. </span>
+    <div class="message"><span class="bold">Message: </span><span> Taking a leap of faith. Entering a new situation which offers great potential but also risk. Innocence, inexperience, new beginnings. </span></div>
+    </div>
+    <div id="pegasus" class="card-description">
+    <h2>I - Pegasus (The Winged Horse)</h2>
+    <span class="intro">In Greek mythology, Pegasus was an immortal winged horse who helped Perseus slay the sea monster Cetus and rescue Andromeda. Possessing unique abilities, Pegasus kicked Mount Helion with his hoof, creating the Spring of Hippocrene, which began to flow from the mountain. This spring was said to have been the source of inspiration for poets and singers. </span>
+    <div class="message"><span class="bold">Message: </span><span>Taking advantage of the resources around you to achieve your goals. Using your mind and talents to create what you desire. Being resourceful and smart. </span></div>
+    </div>
+    <div id="sirius" class="card-description">
+    <h2>II - Sirius</h2>
+    <span class="intro">Also known as the Dog Star, Sirius lies in the constellation Canis Major (the Greater Dog), and is the brightest star in the night sky. Ancient Egyptians identified Sirius with Isis — the Goddess of Fertility, the new year and the flood. Each year just before the summer solstice, Sirius would reappear in the sky after being absent for seventy days. This coincided with the flooding of the Nile river, which brought fertility to the land. Because of its seventy day absence, Sirius was also seen as the doorway to the afterlife. </span>
+    <div class="message"><span class="bold">Message: </span><span>There are higher powers at work. Trust your intuition, look for answers within you. Following your soul purpose, connecting to the unknown. Inner knowledge. </span></div>
+    </div>
+    <div id="venus" class="card-description">
+    <h2>III - Venus</h2>
+    <span class="intro">The planet Venus is named after the Roman Goddess of Love and Beauty. Venus embodies fertility, affection, creativity and harmony. She emerged from the foam of the sea, and is symbolic of the divine feminine. </span>
+    <div class="message"><span class="bold">Message: </span><span>Expressing affection, nurturing. Creating beauty and harmony. Symbolic of all the various stages and expressions of being a woman. Expressing love and sexuality. Something which requires care and attention to prosper. </span></div>
+    </div>
+    <div id="jupiter" class="card-description">
+    <h2>IV - Jupiter</h2>
+    <span class="intro">The largest planet in our solar system, Jupiter was the ruler of the gods in Roman mythology. He upheld the state and ensured order was in place. He was the father of all people, and rewarded and punished his citizens according to their actions. When angered, his wrath took on the form of storms and lightning bolts. </span>
+    <div class="message"><span class="bold">Message: </span><span> Order, law, authority, experience and wisdom. The need for structure and stability in a situation. A person who embodies these qualities. A father-figure, a ruler. </span></div>
+    </div>
+    <div id="centaurus" class="card-description">
+    <h2>V - Centaurus (The Centaur)</h2>
+    <span class="intro">Greek mythology tells of savage beasts called centaurs — half-human, half-horse. Chiron was a centaur who stood out among them. He was knowledgeable in medicine and healing, and a mentor to Heracles and Jason. Once accidentally wounded by Heracles, the immortal Chiron suffered terrible pain. To end his agony, Zeus placed him in the stars, creating the constellation bearing his name. </span>
+    <div class="message"><span class="bold">Message: </span><span>A teacher or mentor figure. Tradition, religion. Belonging to a community, identifying with a group. Education, social institutions. Following a path in a conventional order. </span></div>
+    </div>
+    <div id="corona-borealis" class="card-description">
+    <h2>VI - Corona Borealis (The Northern Crown)</h2>
+    <span class="intro">The hero Theseus of Ancient Greece was known for defeating the violent and insatiable beast Minotaur, imprisoned in a labyrinth on the island of Crete. He accomplished this with the help from Princess Ariadne, who helped to lead him out of the labyrinth with a ball of thread. Theseus promised to leave with her, but instead abandoned her, leaving her heartbroken. When Dionysus, the God of Wine and Harvest, saw Ariadne, he fell in love with her and they were shortly married. Dionysus loved Ariadne deeply, and to celebrate the love they shared, he placed her wedding crown among the stars for her eternal glory. </span>
+    <div class="message"><span class="bold">Message: </span><span>Divine union, harmony. The spiritual connection of two lovers, physical union. Consider the ethics involved in making a choice. Devotion, loyalty, trust. </span></div>
+    </div>
+    <div id="auriga" class="card-description">
+    <h2>VII - Auriga (The Charioteer)</h2>
+    <span class="intro">The Charioteer is said to be Erichthonius, the legendary King of Athens. Born half-human, half-snake, his lack of mobility led him to invent a chariot drawn by four horses. His invention gave him the freedom of movement, and greatly benefited the people of Athens in agriculture and transport. </span>
+    <div class="message"><span class="bold">Message: </span><span>Determination, willpower, self-confidence, victory. You have decided on a goal and your hard work and motivation will bring success. </span></div>
+    </div>
+    <div id="hercules" class="card-description">
+    <h2>VIII - Hercules</h2>
+    <span class="intro">The greatest of all Greek heroes, Hercules was most known for accomplishing the Twelve Labours—heroic tasks and tests assigned to him by the gods. Possessing great physical strength and temper, he had to learn to control both. He was confident and brave, but his lack of wisdom and patience often worked against him. </span>
+    <div class="message"><span class="bold">Message: </span><span>True strength comes from within — patience, courage and compassion. You may be faced with a situation which requires your inner strength and understanding. You act and think with love and kindness.</span></div>
+    </div>
+    <div id="halleys-comet" class="card-description">
+    <h2>IX - Halley's Comet</h2>
+    <span class="intro">Made of ice, dust and rock particles, Halley’s Comet is named after Edmond Halley, who concluded that the comets of 1531, 1607 and 1682 were the same one. He also predicted the next time it will appear, but did not live to see it come true. Halley’s Comet is seen from Earth once every 75 years as it orbits the Sun. As it moves closer to the Sun, the ice evaporates and releases dust particles, which form the comet’s glowing tail. </span>
+    <div class="message"><span class="bold">Message: </span><span>The need for a mental retreat, introspection, solitude. Examine your life in order to understand its patterns and to bring about change. </span></div>
+    </div>
+    <div id="draco" class="card-description">
+    <h2>X - Draco (The Dragon)</h2>
+    <span class="intro">The constellation of Draco is said to represent the mythical dragon Ladon of Ancient Greece who guarded a golden apple tree with fruits of immortality. Hercules was instructed to steal the golden apples for one of his tasks, which he accomplished by placing the dragon under an enchanted sleep. Throughout the year, the constellation appears to revolve around the North Star and flips completely from the winter to the summer months. </span>
+    <div class="message"><span class="bold">Message: </span><span>Luck and destiny are on your side. A successful streak. New opportunities. Take advantage of the circumstances and enjoy what comes your way.</span></div>
+    </div>
+    <div id="libra" class="card-description">
+    <h2>XI - Libra (The Scales)</h2>
+    <span class="intro">Libra, the heavenly scales, was a favourable constellation for the Ancient Romans. It is said that when Rome was founded, the Moon was in Libra. The Babylonians called it “the balance of heaven”. </span>
+    <div class="message"><span class="bold">Message: </span><span>Divine balance and order, justice. Making a morally right decision. Dealing with the consequences of your actions. Honesty and truth. Accepting responsibility for the outcome of your choices. </span></div>
+    </div>
+    <div id="capricornicus" class="card-description">
+    <h2>XII - Capricornicus (The Sea Goat)</h2>
+    <span class="intro">In Ancient Greece, Capricornicus represented Pan, the goat god of nature. Fleeing the monster Typhon, Pan jumped into the river Nile and transformed his lower body into a fish to avoid detection. His upper body stayed above water and remained a goat. </span>
+    <div class="message"><span class="bold">Message: </span><span>Sacrifice for the greater good, temporary release of control. Like Pan, you may need to give something up. You may achieve more by being still. Looking at the world from a different perspective. </span></div>
+    </div>
+    <div id="phoenix" class="card-description">
+    <h2>XIII - Phoenix</h2>
+    <span class="intro">The mythical bird Phoenix lives for centuries. It dies by spontaneously catching on fire and is continuously reborn from its own ashes. It is thereby cleansed and transformed anew each time in an infinite cycle of death and rebirth. </span>
+    <div class="message"><span class="bold">Message: </span><span>Transformation, renewal, rebirth. An ending of something to make way for an important change. Letting go of ways that no longer serve a purpose. </span></div>
+    </div>
+    <div id="horologium" class="card-description">
+    <h2>XIV - Horologium (The Pendulum Clock)</h2>
+    <span class="intro">Horologium was named to honour Christian Huygens, the inventor of the pendulum clock in 1656. The clock uses a pendulum that swings back and forth at a precise time interval. To remain accurate, the mechanism must remain stationary. </span>
+    <div class="message"><span class="bold">Message: </span><span>Balance, moderation and patience bring success and happiness. Keeping a secure and peaceful inner state. Things are in perfect harmony. Divine timing.</span></div>
+    </div>
+    <div id="cetus" class="card-description">
+    <h2>XV - Cetus (The Sea Monster)</h2>
+    <span class="intro">Greek mythology tells of Queen Cassiopeia, who boasted that she and her daughter Andromeda were more beautiful than the daughters of Poseidon. To punish Cassiopeia for her arrogance, Poseidon sent floods on her lands. Cassiopeia consulted the Oracle to find out how to appease the god, and was told that she had to sacrifice her daughter to the sea monster Cetus, who lived in Poseidon’s ocean. Luckily, the hero Perseus managed to slay Cetus just as he emerged from the sea, about to devour Andromeda. </span>
+    <div class="message"><span class="bold">Message: </span><span>Fear, materialism, lust. Ignorance. Self-imposed bonds. Cetus comes from the sea — symbolic of the unconscious, and was defeated by coming to the surface — the conscious, rational mind. Release your fears and free yourself from limiting or harmful thoughts by becoming conscious and aware of their futility </span></div>
+    </div>
+    <div id="pavo" class="card-description">
+    <h2>XVI - Pavo (The Peacock)</h2>
+    <span class="intro">In Greek Mythology, Hera was the Queen Goddess, whose sacred bird was a Peacock. When Hera suspected that her husband Zeus was unfaithful to her, she asked the Giant Argus to watch him. Argus had a hundred eyes and watched Zeus and the Nymph Io day and night. When Zeus discovered that Io was being observed, he had the Giant killed. Distraught after Argus’s death, Hera scattered his eyes all over the tail of her favourite peacock for his eternal memory. </span>
+    <div class="message"><span class="bold">Message: </span><span>Revelation, sudden change, disillusionment. A shattering of old beliefs which may be revealed to be falsehoods. After an initial painful shock, you will come to accept the truth. Cleansing. Enlightenment. </span></div>
+    </div>
+    <div id="polaris" class="card-description">
+    <h2>XVII - Polaris (The North Star)</h2>
+    <span class="intro">Polaris lies almost exactly above the North Pole. As a result, it seems to stay in one place in the Northern sky, while the other stars appear to rotate around it. Its constant position in the sky has made it a reliable navigation tool throughout history. </span>
+    <div class="message"><span class="bold">Message: </span><span>Hope, faith, inspiration. Feeling optimistic, clear thoughts. Having trust in the direction your life is going. Feeling supported by the universe. </span></div>
+    </div>
+    <div id="moon" class="card-description">
+    <h2>XVIII - The Moon</h2>
+    <span class="intro">The Moon is the Earth’s only satellite. Lighting the way at night, it reflects the rays of the Sun but does not emit any light of its own—this is its power of illusion. The change of phases throughout the month have given the Moon a strong association with women, intuition, and the unconscious. </span>
+    <div class="message"><span class="bold">Message: </span><span>Mysterious and elusive, the Moon asks us to look beyond the illusion. Something is not as it seems. Confusion, deception. Being lost in dreams. </span></div>
+    </div>
+    <div id="sun" class="card-description">
+    <h2>XIX - The Sun</h2>
+    <span class="intro">The Sun is the beautiful golden star around which the planets in our solar system revolve. The source of life and warmth on Earth, the Sun is a symbol of happiness, knowledge, growth and enlightenment. </span>
+    <div class="message"><span class="bold">Message: </span><span>Positivity, action, pure confidence. Clear thinking and revelation. Joy and happiness. One of the most positive cards in the deck.</span></div>
+    </div>
+    <div id="cassiopeia" class="card-description">
+    <h2>XX - Cassiopeia</h2>
+    <span class="intro">The Greek Queen Cassiopeia believed herself to be more beautiful than the gods. She even compared her beauty to that of the lovely Nereids, daughters of the Sea God Poseidon. Angered by her arrogance, Poseidon threw her into the sky, chained to her throne. Her punishment is amplified each night as the stars move across the sky, and she is forced to spend half the night hanging upside down. </span>
+    <div class="message"><span class="bold">Message: </span><span> A period of self-evaluation. Personal growth. Acceptance and taking responsibility for past decisions and mistakes. Redemption, forgiveness. </span></div>
+    </div>
+    <div id="earth" class="card-description">
+    <h2>XXI - The Earth</h2>
+    <span class="intro">The Earth is our physical world, which gives us life, food and shelter. Challenging, beautiful and endlessly diverse, it teaches us that everything is connected, material and immaterial. </span>
+    <div class="message"><span class="bold">Message: </span><span>You have accomplished your goals and your efforts have paid off. A situation has come full circle bringing with it a sense of completion. Success. Divine order, harmony. </span></div>
+    </div>
+    <div id="ace-of-swords" class="card-description">
+    <h2>Ace of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Understanding and clarity. Think things through carefully. A challenge that must be approached with logic and honesty. Try not to get emotionally involved. </span></div>
+    </div>
+    <div id="two-of-swords" class="card-description">
+    <h2>Two of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Analyze the situation to make the right decision. Two issues that need to be considered. </span></div>
+    </div>
+    <div id="three-of-swords" class="card-description">
+    <h2>Three of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Pain, heartbreak. Sharp words, harsh truth. Allow time for healing and forgiveness. </span></div>
+    </div>
+    <div id="four-of-swords" class="card-description">
+    <h2>Four of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>A period of relaxation after a difficult time. Rest, renewal of energy. </span></div>
+    </div>
+    <div id="five-of-swords" class="card-description">
+    <h2>Five of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Unethical actions at the expense of others for your own benefit. Lies, trickery. No matter how clever you think your strategy is, victory is unlikely. </span></div>
+    </div>
+    <div id="six-of-swords" class="card-description">
+    <h2>Six of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Leaving difficulties behind for a fresh start. Learning from the recent past to improve your life. Acceptance and healing. Change of scenery. </span></div>
+    </div>
+    <div id="seven-of-swords" class="card-description">
+    <h2>Seven of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Avoiding something which should be faced. Secrecy and dishonesty which is negatively affecting you. Running from a problem. </span></div>
+    </div>
+    <div id="eight-of-swords" class="card-description">
+    <h2>Eight of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Feeling trapped by negative patterns of thinking. Over-dramatizing a situation, victimizing yourself.</span></div>
+    </div>
+    <div id="nine-of-swords" class="card-description">
+    <h2>Nine of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Anxiety, stress, worry. Letting thoughts get out of control. Calm down and deal with your concerns one at a time. Make sure you are making the right decisions in the long run. </span></div>
+    </div>
+    <div id="ten-of-swords" class="card-description">
+    <h2>Ten of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>Total defeat, mental exhaustion. A difficult situation reaches its peak. Possibly something which you have brought upon yourself. Now that the worst is over, things can only get better. </span></div>
+    </div>
+    <div id="page-of-swords" class="card-description">
+    <h2>Page of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span> A clever, idealistic individual. Open and honest, they want to get to the truth. Communication, messages, intellectual pursuits. </span></div>
+    </div>
+    <div id="knight-of-swords" class="card-description">
+    <h2>Knight of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>An intelligent and decisive individual, although emotionally reserved. Taking action on ideas. Harsh critic. The need for balance between the mind and emotions. </span></div>
+    </div>
+    <div id="queen-of-swords" class="card-description">
+    <h2>Queen of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span>A woman with a brilliant mind. She is social, diplomatic, knowledgeable in many subjects. Someone who is ruled by her head, not by her heart. A judgment not clouded by emotion. </span></div>
+    </div>
+    <div id="king-of-swords" class="card-description">
+    <h2>King of Swords</h2>
+    <div class="message"><span class="bold">Message: </span><span> A highly intelligent man, wise and fair. He is attentive and gives good advice. Talent for communication, sales and negotiation. Actions which are determined by logic and reason. </span></div>
+    </div>
+    <div id="ace-of-cups" class="card-description">
+    <h2>Ace of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>The start of a new relationship or creative project. The cup offers great potential, however the final outcome will be decided by your actions.</span></div>
+    </div>
+    <div id="two-of-cups" class="card-description">
+    <h2>Two of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span> A romantic or business partnership. Attraction, connection, friendship. The start of a new relationship.</span></div>
+    </div>
+    <div id="three-of-cups" class="card-description">
+    <h2>Three of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>Enjoying parties and social events with friends and loved ones. Celebrate your success, you have earned it! Joy, fulfillment.</span></div>
+    </div>
+    <div id="four-of-cups" class="card-description">
+    <h2>Four of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>Feeling dissatisfied. Disappointment with a relationship. Emotional withdrawal to think over a situation. Taking time to re-evaluate. </span></div>
+    </div>
+    <div id="five-of-cups" class="card-description">
+    <h2>Five of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>Sadness, grief, emotional pain caused by loss and disappointment. Time to let go and move on. Notice the happiness still present in your life. </span></div>
+    </div>
+    <div id="six-of-cups" class="card-description">
+    <h2>Six of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>Reminiscing over pleasant memories from the past with former friends or lovers. Harmony and joy in present relationships. Sharing love and affection. </span></div>
+    </div>
+    <div id="seven-of-cups" class="card-description">
+    <h2>Seven of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>Allowing your imagination convince you of things which are not necessarily true. Tempting options which may not be what they seem. Assess the situation carefully and get back to reality. </span></div>
+    </div>
+    <div id="eight-of-cups" class="card-description">
+    <h2>Eight of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>An ending of a relationship after much thought. Looking for something more fulfilling. Forming a clear understanding of what you want. Acceptance. Time for a change.</span></div>
+    </div>
+    <div id="nine-of-cups" class="card-description">
+    <h2>Nine of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>Also known as the Wish Card. Happiness, a wish granted. Fulfillment, satisfaction. A delightful development of a relationship. </span></div>
+    </div>
+    <div id="ten-of-cups" class="card-description">
+    <h2>Ten of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>Harmony, celebration, completion. Fulfilling relationships, joyful home. One of the most positive cards. Abundant happiness and bliss. </span></div>
+    </div>
+    <div id="page-of-cups" class="card-description">
+    <h2>Page of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>The start of a new relationship. An affectionate, trusting person. They encourage you to open yourself up emotionally, but be careful not to jump into anything too fast. </span></div>
+    </div>
+    <div id="knight-of-cups" class="card-description">
+    <h2>Knight of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>A new romance. A person who is sweet, but may be emotionally insecure. Learning to master and express emotions. Work together to achieve harmony.</span></div>
+    </div>
+    <div id="queen-of-cups" class="card-description">
+    <h2>Queen of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>A creative and caring woman. She is highly intuitive and wise, sensitive to the needs of others. She is drawn to the mystery of life. Emotional maturity. </span></div>
+    </div>
+    <div id="king-of-cups" class="card-description">
+    <h2>King of Cups</h2>
+    <div class="message"><span class="bold">Message: </span><span>A calm and understanding man. He has an open mind and keeps his emotions under control. He is loving and gentle, very protective of those he cares for.</span></div>
+    </div>
+    <div id="ace-of-wands" class="card-description">
+    <h2>Ace of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>The start of an exciting project or business opportunity. Acting with enthusiasm and total confidence. The spark of an idea. </span></div>
+    </div>
+    <div id="two-of-wands" class="card-description">
+    <h2>Two of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>You have decided on a plan of action. Taking the next step to fulfill your goal. </span></div>
+    </div>
+    <div id="three-of-wands" class="card-description">
+    <h2>Three of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>Positive development resulting from your input and action. Seeking opportunities to further your progress.</span></div>
+    </div>
+    <div id="four-of-wands" class="card-description">
+    <h2>Four of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>Time to enjoy the early results of your work. A celebration, a pleasant voyage, improvement in business.</span></div>
+    </div>
+    <div id="five-of-wands" class="card-description">
+    <h2>Five of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span> Disagreements, conflicts with others. Minor difficulties, obstacles. Wasting energy on insignificant matters. </span></div>
+    </div>
+    <div id="six-of-wands" class="card-description">
+    <h2>Six of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>Victory, success, accomplishment. Your work is noted and appreciated. Beware of arrogance. </span></div>
+    </div>
+    <div id="seven-of-wands" class="card-description">
+    <h2>Seven of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>Struggle, defending your position. Using will and determination to overcome opposition. Self-confidence, fighting for your cause. </span></div>
+    </div>
+    <div id="eight-of-wands" class="card-description">
+    <h2>Eight of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>An active time with many projects. Focus and concentrate to achieve your goals. Sudden, unexpected developments. Use these opportunities to further develop your work. </span></div>
+    </div>
+    <div id="nine-of-wands" class="card-description">
+    <h2>Nine of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>Feeling exhausted and stressed. Maintain your position but be careful not to overexert yourself. You are close to achieving your goal but may need to pace yourself to avoid burning out.</span></div>
+    </div>
+    <div id="ten-of-wands" class="card-description">
+    <h2>Ten of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>You are overwhelmed with work and are under a lot of pressure. Perhaps you have taken on too much. Organize your time in a more efficient way.</span></div>
+    </div>
+    <div id="page-of-wands" class="card-description">
+    <h2>Page of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>An adventurous person excited about life and everything it has to offer. Their openness and enthusiasm reveals a world full of beauty and opportunity. They are optimistic and do not dwell on the negative. </span></div>
+    </div>
+    <div id="knight-of-wands" class="card-description">
+    <h2>Knight of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>A vibrant and expressive individual. Their energy is intense, and is released through a busy schedule, emotions and bursts of creativity. Action driven by impulse and passion. Be inspired, but take some time to think things through. </span></div>
+    </div>
+    <div id="queen-of-wands" class="card-description">
+    <h2>Queen of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>An active woman with an exciting energy, which she is able to direct into productive outlets. Someone who knows what she wants and makes her dreams a reality. She inspires others with her creativity and enthusiasm. </span></div>
+    </div>
+    <div id="king-of-wands" class="card-description">
+    <h2>King of Wands</h2>
+    <div class="message"><span class="bold">Message: </span><span>A bright and confident man, a strong leader. He follows his passions with complete faith. People enjoy his company and he excites them with his energy. Always on the go and brimming with ideas, he directs his strength outward to realize his dreams. </span></div>
+    </div>
+    <div id="ace-of-pentacles" class="card-description">
+    <h2>Ace of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>The start of a new business or project with great potential and reward. An opportunity to improve your finances, however the outcome depends on how it is handled. Money coming your way. General good health. </span></div>
+    </div>
+    <div id="two-of-pentacles" class="card-description">
+    <h2>Two of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>Attempting to integrate two different areas of life. Making a decision on how to proceed with a business matter. </span></div>
+    </div>
+    <div id="three-of-pentacles" class="card-description">
+    <h2>Three of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>A foundation has been built, continue to develop in this direction. Using skills and experience for progress. </span></div>
+    </div>
+    <div id="four-of-pentacles" class="card-description">
+    <h2>Four of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>You have accumulated some wealth, but have financial concerns. Beware of becoming greedy or miserly. Restricting the intake of food, drink, and unnecessary medication to improve health. </span></div>
+    </div>
+    <div id="five-of-pentacles" class="card-description">
+    <h2>Five of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>Financial and material burdens, financial loss. Health concerns. Focus on minimizing expenses and improving your health.</span></div>
+    </div>
+    <div id="six-of-pentacles" class="card-description">
+    <h2>Six of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>Prosperity, improvement of finances. Generosity and sharing wealth with others. A new wardrobe or furnishings for the home. Good health.</span></div>
+    </div>
+    <div id="seven-of-pentacles" class="card-description">
+    <h2>Seven of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>Seeing the fruits of your labour, the results are impressive. A short rest to consider how much more needs to be done. A profitable situation. </span></div>
+    </div>
+    <div id="eight-of-pentacles" class="card-description">
+    <h2>Eight of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>Gaining skills, developing talents for your future ambitions. Dedication to a long term goal. Putting in time and energy into work in a focused and highly productive manner. </span></div>
+    </div>
+    <div id="nine-of-pentacles" class="card-description">
+    <h2>Nine of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>Finally your work is near completion. You are already enjoying the results and rewards it is bringing. A final step remains before successful achievement. Significant financial improvement. Excellent health.</span></div>
+    </div>
+    <div id="ten-of-pentacles" class="card-description">
+    <h2>Ten of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>Success and flowing abundance. Completion. Wealth and material security. Reaping profit from accomplished work. Strong health and confidence. </span></div>
+    </div>
+    <div id="page-of-pentacles" class="card-description">
+    <h2>Page of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>A curious individual, good at saving money. Their eagerness to improve brings success, even if they sometimes lack the determination to follow through with a goal. The ability to see potential profit in a new opportunity. </span></div>
+    </div>
+    <div id="knight-of-pentacles" class="card-description">
+    <h2>Knight of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>A stable and determined individual, who values financial security. They follow a careful, strategic approach, but have difficulty adapting to unexpected changes. More flexibility is needed. </span></div>
+    </div>
+    <div id="queen-of-pentacles" class="card-description">
+    <h2>Queen of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>A warm and generous woman, dedicated to accomplishing her goals and attaining material comfort. Realistic and intelligent, she works hard and brings growth and abundance. </span></div>
+    </div>
+    <div id="king-of-pentacles" class="card-description">
+    <h2>King of Pentacles</h2>
+    <div class="message"><span class="bold">Message: </span><span>A successful, accomplished man. He is well established and financially secure. A hard working individual, eager to see his goals completed. Not one to necessarily break convention, he is conservative and respects tradition. </span></div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="ask-the-cards.js"></script>
+
+  </body>
+</html>
