@@ -83,9 +83,10 @@ var dict_size = 77;
 var chosen_num;
 var shuffled = true;
 
-$( window ).resize(function() {
+/*$( window ).resize(function() {
   set_img_size();
-});
+});*/
+window.addEventListener('resize', set_img_size);
 
 //display the desktop or mobile image depending on the screen size
 function set_img_size() {
