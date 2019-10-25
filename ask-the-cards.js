@@ -142,6 +142,11 @@ var ready = (callback) => {
 ready(() => {
   /* Do things after DOM has fully loaded */
 
+/* or this
+document.addEventListener('DOMContentLoaded', function() {
+  // code
+})
+*/
 
   set_img_size();
 
