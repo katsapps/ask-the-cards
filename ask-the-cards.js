@@ -91,11 +91,13 @@ window.addEventListener('resize', set_img_size);
 //display the desktop or mobile image depending on the screen size
 function set_img_size() {
 
-    var window_width = $( window ).width();
+    //var window_width = $( window ).width();
+    var window_width = window.innerWidth - 15;
     if (window_width < 572) {
 
       $( ".imgs" ).each(function( index, element ) {
-        var img_src = $(element).attr('src').split(/\.jpg/g)[0];
+        //var img_src = $(element).attr('src').split(/\.jpg/g)[0];
+        var img_src = element.getAttribute("src").split(/\.jpg/g)[0];
         var src_name = img_src.split(/\//g)[10]; //_first-image.jpg
         var index_of_m = src_name.lastIndexOf("m");
         var src_length = img_src.length;
@@ -104,7 +106,7 @@ function set_img_size() {
 
         if (index_of_m == -1) { //if it's desktop
           var new_img_src = img_src + 'm' + '.jpg';
-          $(element).attr('src', new_img_src);
+          element.setAttribute("src", new_img_src);
         } else {
           return
         }
@@ -112,7 +114,7 @@ function set_img_size() {
     }
     else {
       $( ".imgs" ).each(function( index, element ) {
-        var img_src = $(element).attr('src').split(/\.jpg/g)[0];
+        var img_src = element.getAttribute('src').split(/\.jpg/g)[0];
         var src_name = img_src.split(/\//g)[10]; //_first-image.jpg
         var index_of_m = src_name.lastIndexOf("m");
         var src_length = img_src.length;
@@ -120,28 +122,44 @@ function set_img_size() {
         var src_name_length = src_name.length - 4 - 1; //_first-image = 12 - 1 = 11
 
         if (index_of_m > -1) {
-          var img_src = $(element).attr('src').split(/\m.jpg/g)[0];
+          var img_src = element.getAttribute('src').split(/\m.jpg/g)[0];
           var new_img_src = img_src + '.jpg';
-          $(element).attr('src', new_img_src);
+          element.setAttribute('src', new_img_src);
         }
       });
     }
 }
 
-$( document ).ready(function() {
+//$( document ).ready(function() {
+
+// Without jQuery
+// Define a convenience method and use it
+var ready = (callback) => {
+  if (document.readyState != "loading") callback();
+  else document.addEventListener("DOMContentLoaded", callback);
+}
+
+ready(() => {
+  /* Do things after DOM has fully loaded */
+
 
   set_img_size();
 
   $('#imgs-div').click(function() {
     if (shuffled) {
-      $('#deck-div').empty();
+      //$('#deck-div').empty();
+      var deckdiv = document.getElementById('deck-div');
+      while (deckdiv.firstChild) {
+        deckdiv.removeChild(deckdiv.firstChild);
+      }
       chosen_num = Math.floor(Math.random()*dict_size);
       var card_src = chosen_num.toString().concat('.jpg');
       var card_name = deck_dict[chosen_num.toString()];
       var img = new Image();
       //img.src = "/s/files/1/0107/8407/9938/files/" + card_src;
 
-      var windowsize = $(window).width();
+      //var windowsize = $(window).width();
+      var windowsize = window.innerWidth - 15;
       if (windowsize < 572) {
         var shopify_addition = "?178";
       } else {
@@ -153,13 +171,15 @@ $( document ).ready(function() {
       img.src = final_src;
 
       img.alt =  card_name;
-      $(img).addClass('imgs');
-      $('#deck-div').append(img);
-
+      img.classList.add("imgs");
+      var deck_div = document.getElementById('deck-div');
+      //$('#deck-div').append(img);
+      deck_div.appendChild(img);
       set_img_size();
 
-      $('#desc-div').html($('#' + card_name).html());
-
+      var desc_div = document.getElementById('desc-div');
+      //$('#desc-div').html($('#' + card_name).html());
+      desc_div.innerHTML = document.getElementById(card_name).innerHTML;
       $('#imgs-div').removeClass('hand-cursor');
 
       $('#transition-img').addClass('opacity-to-1');
@@ -191,4 +211,5 @@ $( document ).ready(function() {
       $('#shuffle-deck').removeClass('to-display');
     }, 1000);
   });
+//});
 });
